@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+
+  <!- DRAWING THE BOOMERANG ->
+  <symbol id="boomerang">
+    <path d="M50, 27
+             L53, 24
+	     L90, 82
+	     L4, 82
+	     L6, 80.5
+	     L76, 78"/>    
+  </symbol>
+
+  <!- DRAWING THE EMBLEM ->
+  <symbol id="emblem">  
+    <use xlink:href="#boomerang"
+          style="stroke:#A44F58; fill:#A44F58;"
+	  transform="translate(2)"/>        
+
+    <use xlink:href="#boomerang"
+          style="stroke:#48819C; fill:#48819C;"    
+	  transform="translate(-52) rotate(240 73 38)" />
+
+    <use xlink:href="#boomerang"
+          style="stroke:#D9CFA6; fill:#D9CFA6;"    
+	  transform="translate(-10) rotate(120 52 57)" />
+
+  </symbol>
+
+  <!- DISPLAYING THE EMBLEM ->
+  <use xlink:href="#emblem" />
+
+</svg>
